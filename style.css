@@ -1,0 +1,42 @@
+:root {
+  --primary: #ff7f00;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+}
+
+/* ================================================================= */
+.heroes {
+  position: relative;
+  background: #ff7f00;
+  background: linear-gradient(45deg, #ff7f00 15%, #673400 95%);
+  height: 100vh;
+  font-family: outfit;
+}
+
+/* ================================================================= */
+.section-title {
+  margin-inline: auto;
+  color: #ff7f00;
+  font-family: outfit;
+  font-weight: bolder;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 12rem;
+  height: 3px;
+  position: absolute;
+  border-radius: 1rem;
+  left: calc(50% - 6rem);
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,127,0,1) 100%);
+}
