@@ -19,7 +19,7 @@ header {
   position: relative;
   background: #ff7f00;
   background: linear-gradient(45deg, #ff7f00 15%, #673400 95%);
-  min-height: 100vh;
+  height: 100vh;
   font-family: outfit;
 }
 .heroes h1 {
@@ -88,6 +88,21 @@ header {
 
 .partner img {
   width: 7rem;
+}
+
+/* ================================================================= */
+.contact {
+  font-family: outfit;
+}
+.contact form {
+}
+.contact .maps {
+  background: grey;
+  width: 100%;
+  min-height: 15rem;
+  height: calc(100% - 1.5rem);
+  border-radius: 0.5rem;
+  border: .5rem solid lightgray;
 }
 
 /* ================================================================= */
