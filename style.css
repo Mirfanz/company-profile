@@ -15,6 +15,11 @@ header {
 }
 
 /* ================================================================= */
+nav {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+/* ================================================================= */
 .heroes {
   position: relative;
   background: #ff7f00;
@@ -22,9 +27,27 @@ header {
   height: 100vh;
   font-family: outfit;
 }
+.heroes .social-media {
+  position: absolute;
+  right: 0;
+  top: calc(50vh - 8rem);
+  display: flex;
+  flex-direction: column;
+  background: blueviolet;
+  /* gap: 0.25rem; */
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.heroes .social-media a {
+  padding: 0.75rem;
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+
 .heroes h1 {
   font-weight: 700;
   font-size: 44px;
+  text-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
 }
 /* ================================================================= */
 .product .card {
@@ -102,7 +125,7 @@ header {
   min-height: 15rem;
   height: calc(100% - 1.5rem);
   border-radius: 0.5rem;
-  border: .5rem solid lightgray;
+  border: 0.5rem solid lightgray;
 }
 
 /* ================================================================= */
